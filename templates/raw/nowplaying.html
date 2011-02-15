@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../media/css/style.css" type="text/css" media="screen" />
+    </head>
+    <body>
+        <div id="vis" class="blueup">
+            <div id="logo">
+                <img class="derplogo" src="http://10.50.213.8/assets/derp_logo1.png">
+            </div>
+            <div class="nowplaying">
+                <p>NOW PLAYING</p>
+                <div class="artist">{{ xml|http://10.50.213.8/ws/events/at.xml|artist }}</div>
+                <div class="song">{{ xml|http://10.50.213.8/ws/events/at.xml|title }}</div>
+            </div>
+            <div class="schedule">
+                <img class="presenterimage" src="http://10.50.213.8/assets/{{ xml|http://10.50.213.8/ws/schedule/next.xml|image }}">
+            </div>
+        </div>
+    </body>
+</html>

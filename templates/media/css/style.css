@@ -1,13 +1,89 @@
+body {
+    font-family: 'Allerta';
+}
+
 h1, h2, h3, h4, h5, h6, p, ol, ul, body {
     margin: 0;
     padding: 0;
-    font-size: 15px !important;
+    font-size: 15px;
     font-weight: normal;
 }
 
 #vis {
     width: 320px;
     height: 240px;
-    background: #eee;
     overflow: hidden;
+    position: absolute;
+}
+
+#vis.blueup {
+    background: url('http://10.50.213.8/assets/graphics/blue_wipe_up.png');
+}
+
+#vis.redup {
+    background: url('http://10.50.213.8/assets/graphics/red_wipe_up.png');
+}
+
+div.onair {
+    position: absolute;
+    top: 118px;
+    left: 19px;
+    padding: 10px;
+    background: url('http://10.50.213.8/assets/graphics/blue_rounded_280x100.png');
+    width: 260px;
+    height: 80px;
+    color: #eee;
+}
+
+div.onair div.presenter {
+    padding-top: 6px;
+    font-size: 20px;
+    color: #fff;
+}
+
+div.onair div.synopsis {
+    padding-top: 5px;
+    font-size: 10px;
+    line-height: 13px;
+    width: 190px;
+    color: #eee;
+}
+
+div.nowplaying {
+    position: absolute;
+    top: 118px;
+    left: 19px;
+    padding: 10px;
+    background: url('http://10.50.213.8/assets/graphics/red_rounded_280x100.png');
+    width: 260px;
+    height: 80px;
+    color: #E3C5CB;
+}
+
+div.nowplaying div.artist {
+    padding-top: 6px;
+    font-size: 20px;
+    color: #fff;
+}
+
+div.nowplaying div.song {
+    padding-top: 5px;
+    font-size: 16px;
+    color: #eee;
+}
+
+.schedule {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.presenterimage {
+    height: 100px !important;
+}
+
+.derplogo {
+    width: 240px;
+    position: absolute;
+    top: 0px;
 }

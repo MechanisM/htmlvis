@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../media/css/style.css" type="text/css" media="screen" />
+    </head>
+    <body>
+        <div id="vis" class="redup">
+            <div id="logo">
+                <img class="derplogo" src="http://10.50.213.8/assets/derp_logo1.png">
+            </div>
+            <div class="onair">
+                <p>ON AIR NOW</p>
+                <div class="presenter">{{ xml|http://10.50.213.8/ws/schedule/next.xml|name }}</div>
+                <div class="synopsis">{{ xml|http://10.50.213.8/ws/schedule/next.xml|synopsis }}</div>
+            </div>
+            <div class="schedule">
+                <img class="presenterimage" src="http://10.50.213.8/assets/{{ xml|http://10.50.213.8/ws/schedule/next.xml|image }}">
+            </div>
+        </div>
+    </body>
+</html>
