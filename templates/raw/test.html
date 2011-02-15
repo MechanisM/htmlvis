@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../media/css/style.css" type="text/css" media="screen" />
+    </head>
+    <body>
+        <div id="vis">
+            <h1>Station FM</h1>
+            <div class="artist">{{ xml|http://10.50.213.8/ws/events/at.xml|artist }}</div>
+            <div class="song">{{ xml|http://10.50.213.8/ws/events/at.xml|title }}</div>
+        </div>
+    </body>
+</html>
